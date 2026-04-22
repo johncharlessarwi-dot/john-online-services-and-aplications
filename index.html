@@ -1,1 +1,116 @@
-<meta name="google-site-verification" content="XoE8oDlw0Yl8hnRs215sWW4_tL-CTxsfetjmh-W8EUE" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="google-site-verification" content="XoE8oDlw0Yl8hnRs215sWW4_tL-CTxsfetjmh-W8EUE" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>John Online Services Tanzania | HESLB, University & RITA Applications</title>
+
+  <meta name="description" content="Apply for HESLB loans, university admissions, and government services online in Tanzania. Fast, AI-powered system with WhatsApp support.">
+  <meta name="keywords" content="HESLB application, university application Tanzania, online services Tanzania, RITA certificate, AI application system">
+
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="John Online Services Tanzania">
+  <meta property="og:description" content="Apply online for universities, loans, and certificates using AI.">
+  <meta property="og:type" content="website">
+
+  <link rel="canonical" href="https://yourdomain.com">
+
+  <style>
+    body {
+      font-family: Arial;
+      margin: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #0a3d62;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    button {
+      background: #0a3d62;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>John Online Services</h1>
+  <p>Apply for HESLB, Universities & Government Services Online</p>
+</header>
+
+<section>
+
+  <div class="card">
+    <h2>🎓 University Applications</h2>
+    <p>Apply to all universities in Tanzania with AI assistance.</p>
+  </div>
+
+  <div class="card">
+    <h2>💰 HESLB Loan Application</h2>
+    <p>Fast and secure loan application processing.</p>
+  </div>
+
+  <div class="card">
+    <h2>📄 RITA Certificates</h2>
+    <p>Birth & Death certificate applications made easy.</p>
+  </div>
+
+</section>
+
+<section>
+  <h2>Apply Now</h2>
+
+  <input type="text" id="phone" placeholder="Enter Phone Number"><br><br>
+  <select id="service">
+    <option>HESLB Application - 10000</option>
+    <option>University Application - 3000</option>
+    <option>Birth Certificate - 5000</option>
+  </select><br><br>
+
+  <button onclick="submitForm()">Submit Application</button>
+</section>
+
+<script>
+function submitForm() {
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+
+  fetch("https://your-backend-api.com/api/apply", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ phone, service })
+  })
+  .then(res => res.json())
+  .then(data => {
+    alert("Application submitted successfully!");
+    window.location.href = "https://wa.me/255698170989";
+  })
+  .catch(err => {
+    alert("Error submitting application");
+  });
+}
+</script>
+
+</body>
+</html>
